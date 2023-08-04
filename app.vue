@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>test</h1>
+    <RepositoriesDataTable/>
   </div>
 </template>
 
@@ -8,8 +8,5 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  created: function() {
-    console.log('hello, world!');
-  },
 });
 </script>
