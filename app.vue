@@ -9,14 +9,17 @@
             class="form-control form-control-lg"
             id="nameInput"
             placeholder="Repository name"
-            v-model="name"
+            v-model="pendingName"
+            @blur="handleInputBlur"
           />
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <RepositoriesDataTable/>
+        <RepositoriesDataTable
+          :name="name"
+        />
       </div>
     </div>
   </div>
@@ -30,8 +33,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default defineComponent({
   data: function() {
     return {
+      pendingName: '',
       name: '',
     };
+  },
+  methods: {
+    handleInputBlur: function() {
+      this.name = this.pendingName;
+    },
   },
 });
 </script>
