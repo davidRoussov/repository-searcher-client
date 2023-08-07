@@ -39,6 +39,10 @@ yarn dev
 
 This will launch the web application at [http://localhost:3000](http://localhost:3000) in your default web browser.
 
+---
+
+*Note: If API port 8000 was originally unavailable, update environment variable VUE_APP_API_BASE_URL in .env to reflect the port the API is running on.*
+
 ## Building the Application
 
 To build the production-ready version of the web application, execute the following command:
