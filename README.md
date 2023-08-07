@@ -1,63 +1,48 @@
-# Nuxt 3 Minimal Starter
+# Repository Searcher
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Nuxt 3 web app that searches Github repositories.
 
-## Setup
+## Prerequisites
 
-Make sure to install the dependencies:
+Before running this web application, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/) (version 16.18.1 or higher)
+- [Yarn](https://yarnpkg.com/) (version 1.22.19 or higher)
+
+## Getting Started
+
+1. Clone the repository:
 
 ```bash
-# npm
-npm install
+git clone git@github.com:davidRoussov/repository-searcher-client.git
+```
 
-# pnpm
-pnpm install
+2. Navigate to the project directory:
 
-# yarn
+```bash
+cd repository-searcher-client
+```
+
+3. Install dependencies using Yarn:
+
+```bash
 yarn install
 ```
 
-## Development Server
+## Running the Application
 
-Start the development server on `http://localhost:3000`:
+To start the development server, run the following command:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
 yarn dev
 ```
 
-## Production
+This will launch the web application at [http://localhost:3000](http://localhost:3000) in your default web browser.
 
-Build the application for production:
+## Building the Application
+
+To build the production-ready version of the web application, execute the following command:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
 yarn build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
